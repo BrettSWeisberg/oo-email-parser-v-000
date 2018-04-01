@@ -15,7 +15,7 @@ class EmailParser
     final = emails.split.collect do |email|
       email.gsub(',', '')
     end
-
+    
     final.uniq
   end
 end
