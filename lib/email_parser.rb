@@ -15,7 +15,9 @@ class EmailParser
   end
 
   def parse
-    part_1 = emails.split(',')
+    part_1 = emails.split
+
+    binding.pry
     part _2 = []
     part_1.each do |email|
        if part_2.count("email") == nil
