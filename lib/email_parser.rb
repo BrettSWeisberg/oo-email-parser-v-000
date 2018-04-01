@@ -14,10 +14,12 @@ class EmailParser
     @emails << emails
   end
 
-binding.pry
-
-  def parser(emails)
-    emails.split
+  def parse
+    part_1 = self.emails.split(" ")
+    #part _2 = []
+    part_1.map.with_index do |email_a , email_b|
+       email_a != email_b 
+    end
   end
 
 end
