@@ -18,7 +18,7 @@ class EmailParser
     part_1 = self.emails.split(" ")
     #part _2 = []
     part_1.map.with_index do |email_a , email_b|
-       email_a != email_b 
+       email_a != email_b
     end
   end
 
