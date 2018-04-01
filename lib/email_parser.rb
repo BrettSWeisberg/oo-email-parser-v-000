@@ -9,13 +9,14 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
+    binding.pry
   end
 
   def parse
     final = emails.split.collect do |email|
       email.gsub(',', '')
     end
-    
+
     final.uniq
   end
 end
