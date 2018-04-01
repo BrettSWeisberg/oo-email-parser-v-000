@@ -12,12 +12,10 @@ class EmailParser
   end
 
   def parse
-    part_1 = emails.split
-
+    part_2 = []
     binding.pry
-    part _2 = []
-    part_1.each do |email|
-       if part_2.count("email") == nil
+    emails.split.each do |email|
+       if part_1.count("email") == nil
          part_2 << email
        end
     end
