@@ -18,5 +18,6 @@ binding.pry
 
   def parser(emails)
     emails.split
+  end
 
 end
