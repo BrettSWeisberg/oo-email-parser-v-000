@@ -10,8 +10,10 @@ class EmailParser
   @emails = []
 
   def initialize
-    @emails << self
+    emails = self.new
+    @emails << emails
   end
+
 binding.pry
 
   def parser(emails)
