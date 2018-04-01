@@ -10,7 +10,7 @@ class EmailParser
   @@emails = []
 
   def initialize(emails)
-    @emails = emails
+    emails = self.new
     @@emails << self
   end
 
