@@ -10,12 +10,12 @@ class EmailParser
   @@emails = []
 
   def initialize(emails)
-    emails = self.new
+    @emails = self.new
     @@emails << self
   end
 
   def parse
-    part_1 = self.emails.split("[\s,]")
+    part_1 = self.class.emails.split("[\s,]")
     part _2 = []
     part_1.each do |email|
        if part_2.count("email") == nil
